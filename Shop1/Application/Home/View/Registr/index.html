@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Mosaddek">
+    <meta name="keyword" content="FlatLab, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <link rel="shortcut icon" href="img/favicon.png">
+
+    <title>玉器</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="__LINK__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__LINK__/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <!--<link href="__LINK__/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>-->
+    <!-- Custom styles for this template -->
+    <link href="__LINK__/css/style.css" rel="stylesheet">
+    <link href="__LINK__/css/style-responsive.css" rel="stylesheet"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+    <script src="__LINK__/js/html5shiv.js"></script>
+    <script src="__LINK__/js/respond.min.js"></script>
+    <![endif]-->
+
+
+</head>
+
+<body class="login-body">
+
+<div class="container">
+
+    <form class="form-signin" method="post" action="__CONTROLLER__/registr/">
+        <h2 class="form-signin-heading">账户注册</h2>
+
+        <div class="login-wrap">
+            <label for="name">输入用户名</label>
+            <input type="text" class="form-control" name="user"  maxlength="32" id="name" placeholder="用户名" autofocus>
+            <label for="name">密码</label>
+            <input type="password" class="form-control" name="pass" id="pas1" maxlength="32" id="pass" placeholder="密码" autofocus>
+
+            <div class="radios">
+                <label class="label_radio col-lg-6 col-sm-6" for="radio-01">
+                    <input name="sex" id="radio-01" value="1" type="radio" checked/> 男
+                </label>
+                <label class="label_radio col-lg-6 col-sm-6" for="radio-02">
+                    <input name="sex" id="radio-02" value="2" type="radio"/> 女
+                </label>
+            </div>
+
+
+            <input type="email" class="form-control"  placeholder="邮箱账号">
+            <label class="checkbox">
+                <input type="checkbox" id="read" value="agree this condition"> 我已经阅读并同意 <a href="#">《注册协议》</a>
+            </label>
+            <button id="sub" class="btn btn-lg btn-login btn-block" type="submit" disabled>提交</button>
+
+
+        </div>
+
+    </form>
+
+</div>
+
+<script type="text/javascript" src="__PUBLIC__/First/catalog/view/javascript/jquery/jquery-2.1.1.min.js"></script>
+
+<script>
+
+
+
+    $("#read").click(function () {
+        $("#sub").removeAttr("disabled");
+    });
+
+
+</script>
+</body>
+</html>

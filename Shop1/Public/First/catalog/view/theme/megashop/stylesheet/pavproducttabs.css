@@ -1,0 +1,232 @@
+/**
+ * Web Application Prefix Apply For Making Owner Styles
+ */
+/**
+ *   Blocks Layout Selectors
+ */
+/**
+ * Product Item Selectors
+ */
+/***********************************************************************/
+/*
+ * LAYOUT VARIABLES
+ */
+/**
+* Transition-timing-function property@mixin 
+*/
+/*background RGBA
+============================================*/
+/*inline-block
+============================================*/
+/****/
+/* RIGHT TO LEFT */
+/* line 8, ../development/scss/pavproducttabs.scss */
+.producttabs ul:after, .producttabs ul:before {
+  content: none;
+}
+/* line 11, ../development/scss/pavproducttabs.scss */
+.producttabs .box-heading {
+  padding: 0;
+  background: #268bb9;
+}
+/* line 14, ../development/scss/pavproducttabs.scss */
+.producttabs .box-heading > * {
+  padding: 0;
+  background: none;
+}
+/* line 18, ../development/scss/pavproducttabs.scss */
+.producttabs .box-heading li > a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+}
+/* line 27, ../development/scss/pavproducttabs.scss */
+.producttabs .box-heading li.active a {
+  color: white;
+}
+/* line 31, ../development/scss/pavproducttabs.scss */
+.producttabs .products-row {
+  border-bottom: none;
+}
+
+/* line 35, ../development/scss/pavproducttabs.scss */
+.box-left {
+  display: table;
+  width: 100%;
+}
+/* line 38, ../development/scss/pavproducttabs.scss */
+.box-left ul {
+  width: 50px !important;
+  display: table-cell !important;
+  vertical-align: middle;
+  margin-right: -50px;
+}
+/* line 44, ../development/scss/pavproducttabs.scss */
+.box-left li {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  padding: 0;
+  margin: 100px 0;
+  line-height: 24px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+}
+/* line 52, ../development/scss/pavproducttabs.scss */
+.box-left li > a {
+  position: absolute;
+  padding: 0;
+  top: -35px;
+  left: -40px;
+  text-transform: uppercase !important;
+  font-size: 16px !important;
+  font-weight: bold;
+}
+/* line 423, ../development/scss/mixins/_app.scss */
+.rtl .box-left li > a {
+  right: -40px;
+  left: auto;
+}
+/* line 64, ../development/scss/pavproducttabs.scss */
+.box-left .tab-content {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+}
+
+/* line 71, ../development/scss/pavproducttabs.scss */
+.box-center ul {
+  display: table;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+/* line 77, ../development/scss/pavproducttabs.scss */
+.box-center li {
+  float: none;
+  display: table-cell;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+/* line 335, ../development/scss/mixins/_app.scss */
+.rtl .box-center li {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: inherit;
+}
+/* line 81, ../development/scss/pavproducttabs.scss */
+.box-center li:first-child {
+  border-left: none;
+}
+/* line 335, ../development/scss/mixins/_app.scss */
+.rtl .box-center li:first-child {
+  border-right: none;
+  border-left: inherit;
+}
+/* line 84, ../development/scss/pavproducttabs.scss */
+.box-center li.active {
+  background: #333333;
+}
+
+/* line 93, ../development/scss/pavproducttabs.scss */
+.sidebar .box-center ul {
+  display: table;
+  text-align: center;
+  width: 100%;
+}
+/* line 98, ../development/scss/pavproducttabs.scss */
+.sidebar .box-center li a {
+  padding: 15px 10px;
+  color: white;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 107, ../development/scss/pavproducttabs.scss */
+  .pav-product-tab .nav-header {
+    float: none;
+  }
+  /* line 110, ../development/scss/pavproducttabs.scss */
+  .pav-product-tab .nav.right {
+    float: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* line 116, ../development/scss/pavproducttabs.scss */
+  .sidebar .producttabs .box-heading a {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 123, ../development/scss/pavproducttabs.scss */
+  .pav-product-tab .nav-header {
+    float: none;
+  }
+  /* line 126, ../development/scss/pavproducttabs.scss */
+  .pav-product-tab .nav.right {
+    float: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* line 132, ../development/scss/pavproducttabs.scss */
+  .sidebar .producttabs .box-heading a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 139, ../development/scss/pavproducttabs.scss */
+  .pav-product-tab .nav-header {
+    float: none;
+  }
+  /* line 142, ../development/scss/pavproducttabs.scss */
+  .pav-product-tab .nav.right {
+    float: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* line 148, ../development/scss/pavproducttabs.scss */
+  .sidebar .producttabs .box-heading a {
+    font-size: 10px;
+  }
+
+  /* line 152, ../development/scss/pavproducttabs.scss */
+  .box-left {
+    display: block;
+    width: 100%;
+  }
+  /* line 155, ../development/scss/pavproducttabs.scss */
+  .box-left ul {
+    width: auto !important;
+    display: block !important;
+    vertical-align: middle;
+    margin-right: 0px;
+  }
+  /* line 161, ../development/scss/pavproducttabs.scss */
+  .box-left li {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: block;
+  }
+  /* line 167, ../development/scss/pavproducttabs.scss */
+  .box-left li > a {
+    position: relative;
+    top: 0px;
+    padding: 14px 25px;
+    left: 0px;
+  }
+  /* line 423, ../development/scss/mixins/_app.scss */
+  .rtl .box-left li > a {
+    right: 0px;
+    left: auto;
+  }
+  /* line 174, ../development/scss/pavproducttabs.scss */
+  .box-left .tab-content {
+    display: block;
+  }
+}

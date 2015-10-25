@@ -1,0 +1,100 @@
+<include file="Public/header.html"/>
+</head>
+<body>
+
+
+<form action="__CONTROLLER__/cate/" method="post">
+
+    <div class="container" style="margin-top: 50px;">
+        <div class="row">
+            <h3>添加分类</h3>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-2  col-md-2"><h5>上级:</h5></div>
+            <div class="col-xs-9  col-md-5">
+                <select class="form-control" name="cate">
+                    <option value="0">一级分类</option>
+                    <volist name="list" id="vo">
+                        <option value="<{$vo.1}>"> <{$vo.0}></option>
+                    </volist>
+                </select>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-2  col-md-2"><h5>名称:</h5></div>
+            <div class="col-xs-9  col-md-5">
+                <input type="text" name="name" class="form-control" placeholder="名称">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="well" style="background: #818181;   ">
+
+                <button type="submit" class="btn btn-primary">提交</button>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+
+<div style="margin: 10px;">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <td><h4>ID</h4></td>
+            <td>
+                <h4>PID</h4>
+            </td>
+            <td>
+                <h4>名字</h4>
+            </td>
+            <td>
+                <h4>操作</h4>
+            </td>
+
+        </tr>
+        </thead>
+        <tbody>
+        <volist name="tables" id="vo">
+            <tr>
+                <td><{$vo.id}></td>
+                <td><{$vo.pid}></td>
+                <td><{$vo.names}></td>
+                <td>
+                    <a  onclick="del('<{$vo.id}>');" >删除 |  </a>
+                </td>
+            </tr>
+        </volist>
+        </tbody>
+
+    </table>
+</div>
+
+
+
+
+<include file="Public/footer.html"/>
+
+<script>
+    $(".row").css({"margin-top": "30px"});
+    $(".form-control").css({"color": "black"});
+
+
+</script>
+
+
+
+<script>
+    function del(value){
+        var val = confirm("是否删除");
+        if(val){
+            location.href="__CONTROLLER__/del/id/"+value;
+        }
+//
+    }
+</script>

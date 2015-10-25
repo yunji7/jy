@@ -1,0 +1,232 @@
+
+<footer id="footer">
+
+    <section class="footer-top " id="pavo-footer-top">
+        <div class="container">
+            <div class="inner">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <p><img src="__PUBLIC__/First/image/catalog/logo.png" alt="logo"></p>
+
+                        <p>
+                            <span>安全购物保障,</span><br/>
+                            <span>正品"假一赔三"</span><br/>
+
+                        </p></div>
+                    <div class="col-md-2 col-sm-4">
+                        <h5 class="box-heading"><span>售后服务</span></h5>
+                        <ul class="list-unstyled">
+                            <li><a href="__MODULE__/Address/ref">退换货政策</a></li>
+                            <li><a href="__MODULE__/Address/shopmust">购买须知</a></li>
+                            <li><a href="__MODULE__/Address/back">退款方式</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <h5 class="box-heading"><span>支付方式</span></h5>
+                        <ul class="list-unstyled">
+
+                            <li><a href="__MODULE__/Address/card">网上支付</a></li>
+                            <li><a href="__MODULE__/Address/card">银行转账</a></li>
+                            <li><a href="__MODULE__/Address/email">运费说明</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-2 col-sm-4">
+                        <h5 class="box-heading"><span>自助服务</span></h5>
+                        <ul class="list-unstyled">
+
+                            <li><a href="__MODULE__/Address/free">免责条款</a></li>
+                            <li><a href="__MODULE__/join/index">招商加盟</a></li>
+                            <li><a href="__MODULE__/Address/index">聚盈介绍</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                        <div class="box pav-custom  ">
+                            <div class="box-heading"><span>客服中心</span></div>
+                            <div class="box-content">
+                                <div class="address">
+
+                                    <div class="box-addres">
+                                        <div class="link-address icon"><span
+                                                class="fa fa-map-marker">&nbsp;</span><span>广东省广州市</span>
+                                        </div>
+                                        <div class="link-mobile icon"><span
+                                                class="fa fa-phone">&nbsp;</span><span>Phone:+86 13822164734 </span>
+                                        </div>
+                                        <div class="link-mobile icon"><span
+                                                class="fa fa-phone">&nbsp;</span><span>Phone:+86 18929259220</span>
+                                        </div>
+                                        <div class="link-mail icon"><span class="fa fa-envelope">&nbsp;</span>
+                                            <span></span>
+                                            <span>yon168138@163.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="footer-center " id="pavo-footer-center">
+        <div class="container">
+            <div class="inner">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12  "></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</footer>
+<div id="powered">
+    <div class="container">
+        <div class="inner">
+            <div id="top"><a class="scrollup" href="#"><i class="fa fa-angle-up"></i>Top</a></div>
+            <div class="copyright">
+                技术支持 <a href="http://www.senyangsoft.com/index.html">森阳软件科技有限公司</a><br/> Copyright© 聚盈珠宝 2007-2015，All Rights Reserved &copy;
+                <br>友情链接 <a href="http://www.gtc-china.cn/">广东珠宝鉴定中心</a>
+              <a href="http://www.gdjade.cn/">广东省玉器商会</a>
+
+
+            </div>
+            <div class="paypal">
+                <img src="__PUBLIC__/First/image/data/paypal.png" alt="paypal"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+
+
+    var $MAINCONTAINER = $("html");
+
+    /**
+     * BACKGROUND-IMAGE SELECTION
+     */
+    $(".background-images").each(function () {
+        var $parent = this;
+        var $input = $(".input-setting", $parent);
+        $(".bi-wrapper > div", this).click(function () {
+            $input.val($(this).data('val'));
+            $('.bi-wrapper > div', $parent).removeClass('active');
+            $(this).addClass('active');
+
+            if ($input.data('selector')) {
+                $($input.data('selector'), $($MAINCONTAINER)).css($input.data('attrs'), 'url(' + $(this).data('image') + ')');
+            }
+        });
+    });
+
+    $(".clear-bg").click(function () {
+        var $parent = $(this).parent();
+        var $input = $(".input-setting", $parent);
+        if ($input.val('')) {
+            if ($parent.hasClass("background-images")) {
+                $('.bi-wrapper > div', $parent).removeClass('active');
+                $($input.data('selector'), $("#main-preview iframe").contents()).css($input.data('attrs'), 'none');
+            } else {
+                $input.attr('style', '')
+            }
+            $($input.data('selector'), $($MAINCONTAINER)).css($input.data('attrs'), 'inherit');
+
+        }
+        $input.val('');
+
+        return false;
+    });
+
+
+    $('.accordion-group input.input-setting').each(function () {
+        var input = this;
+        $(input).attr('readonly', 'readonly');
+        $(input).ColorPicker({
+            onChange: function (hsb, hex, rgb) {
+                $(input).css('backgroundColor', '#' + hex);
+                $(input).val(hex);
+                if ($(input).data('selector')) {
+                    $($MAINCONTAINER).find($(input).data('selector')).css($(input).data('attrs'), "#" + $(input).val())
+                }
+            }
+        });
+    });
+    $('.accordion-group select.input-setting').change(function () {
+        var input = this;
+        if ($(input).data('selector')) {
+            var ex = $(input).data('attrs') == 'font-size' ? 'px' : "";
+            $($MAINCONTAINER).find($(input).data('selector')).css($(input).data('attrs'), $(input).val() + ex);
+        }
+    });
+
+
+</script>
+</div>
+<div class="sidebar-offcanvas  visible-xs visible-sm">
+    <div class="offcanvas-inner panel panel-offcanvas">
+        <div class="offcanvas-heading">
+            <button type="button" class="btn btn-outline btn-close " data-toggle="offcanvas"><span
+                    class="fa fa-times"></span></button>
+        </div>
+        <div class="offcanvas-body panel-body">
+
+            <div class="category box box-highlights theme">
+                <div class="box-heading"><span>所有商品分类</span></div>
+                <div class="box-content tree-menu">
+
+
+                    <ul id="941805475accordion" class="box-category box-panel">
+
+                        <volist name="names" id="vo">
+                            <li class="accordion-group clearfix"   style="background: white; color: #828282;">
+                                <a href="__MODULE__/index/yee/cate/<{$vo.id}>"><{$vo.names}></a>
+                            </li>
+                        </volist>
+                        <li class="accordion-group clearfix"  style="background: white; color: #828282;">
+                            <a href="__MODULE__/Join">招商加盟</a>
+                        </li>
+
+                        <li class="accordion-group clearfix"  style="background: white; color: #828282;">
+                            <a href="__MODULE__/address">关于我们</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    var active = $('.collapse.in').attr('id');
+                    $('span[data-target=#' + active + ']').html("-");
+
+                    $('.collapse').on('show.bs.collapse', function () {
+                        $('span[data-target=#' + $(this).attr('id') + ']').html("-");
+                    });
+                    $('.collapse').on('hide.bs.collapse', function () {
+                        $('span[data-target=#' + $(this).attr('id') + ']').html("+");
+                    });
+                });
+            </script>
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

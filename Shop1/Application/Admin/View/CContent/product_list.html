@@ -1,0 +1,104 @@
+<include file="Public/header.html"/>
+</head>
+
+<body>
+
+
+
+      <!--sidebar start-->
+
+      <!--sidebar end-->
+
+      <!--main content start-->
+      <section id="main-content" style="margin-left: 0;">
+          <section class="wrapper" style="margin-top: 0px;">
+              <!-- page start-->
+              <div class="row">
+                  <div class="col-md-3">
+                      <section class="panel">
+                          <div class="panel-body">
+                              <input type="text" placeholder="搜索" class="form-control">
+                          </div>
+                      </section>
+
+
+                      <section class="panel">
+                          <div class="panel-body">
+                              <a  href="__CONTROLLER__/product_details"  class="btn btn-primary">创建</a>
+                          </div>
+                      </section>
+
+
+                      <section class="panel">
+                          <header class="panel-heading">
+                              分类
+                          </header>
+                          <div class="panel-body">
+                              <ul class="nav prod-cat">
+
+                                   <volist name="catagory" id="vo">
+                                       <li><a href="#"><i class=" icon-angle-right"></i><{$vo.names}></a></li>
+                                   </volist>
+
+                              </ul>
+                          </div>
+                      </section>
+
+
+                  </div>
+                  <div class="col-md-9">
+                      <section class="panel">
+                          <div class="panel-body">
+
+                              <div class="pull-right">
+                                  <ul class="pagination pagination-sm pro-page-list">
+
+                                      <li><a href="#">1</a></li>
+                                      <li><a href="#">2</a></li>
+                                      <li><a href="#">3</a></li>
+                                      <li><a href="#">»</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </section>
+
+                      <div class="row product-list">
+                          <volist name="commodity" id="vo">
+
+                          <div class="col-md-4">
+                              <section class="panel">
+                                  <div class="pro-img-box">
+                                      <img src="<{$vo.img.0}>" alt=""/>
+                                  </div>
+
+                                  <div class="panel-body text-center">
+                                      <h4>
+                                         产品ID: <{$vo.myid}>
+                                          <br/>
+                                          <a href="__CONTROLLER__/product_details/myid/<{$vo.myid}>" class="pro-title">
+                                              <{$vo.tittle}>
+                                          </a>
+                                      </h4>
+                                      <p class="price">$<{$vo.pay}></p>
+                                  </div>
+                              </section>
+                          </div>
+
+                          </volist>
+                      </div>
+                  </div>
+              </div>
+              <!-- page end-->
+          </section>
+      </section>
+      <!--main content end-->
+
+      <!--footer start-->
+
+
+      <!--footer end-->
+
+
+      <include file="Public/footer.html"/>
+
+

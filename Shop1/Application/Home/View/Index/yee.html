@@ -1,0 +1,173 @@
+<include file="Public/header/header.html" />
+
+
+
+
+
+<div id="columns">
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="__CONTROLLER__"><i
+                    class="fa fa-home"></i></a></li>
+            <li><a href="__SELF__"><{$cate.names}></a></li>
+        </ul>
+
+
+        <div class="row">
+            <aside id="sidebar-left" class="col-md-3">
+                <column id="column-left" class="hidden-xs sidebar">
+
+                    <div class="category box box-highlights theme">
+                        <div class="box-heading"><span>商品分类</span></div>
+                        <div class="box-content tree-menu">
+                            <ul id="366890000accordion" class="box-category box-panel">
+
+                                <volist name="names" id="vo">
+                                    <a href="__CONTROLLER__/yee/cate/<{$vo.id}>">
+                                    <li class="accordion-group clearfix">
+                                        <{$vo.names}>
+                                    </li>
+                                    </a>
+                                </volist>
+                            </ul>
+
+                            <script>
+                                $("#366890000accordion   li").css("background","white");
+                            </script>
+                        </div>
+                    </div>
+
+
+                </column>
+            </aside>
+            <section id="sidebar-main" class="col-md-9">
+                <div id="content" style="padding-top: 0px">
+
+
+
+
+
+                    <div class="product-filter ">
+                        <div class="inner clearfix">
+                            <div class="display">
+                                <div class="btn-group group-switch">
+                                    <button type="button" id="list-view" class="btn btn-switch list"
+                                            data-toggle="tooltip" title="" data-original-title="List">
+                                        <i class="fa fa-th-list"></i>
+                                    </button>
+                                    <button type="button" id="grid-view" class="btn btn-switch grid active"
+                                            data-toggle="tooltip" title="" data-original-title="Grid">
+                                        <i class="fa fa-th-large"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="products" class="product-grid">
+                        <div class="products-block">
+
+                            <!--<div class="row products-row">-->
+                            <!--</div>-->
+
+
+                            <volist name="skey" id="vo" key="k" >
+
+                                <if condition="$key % 3 eq 0 ">
+                                    <div class="row products-row">
+                                </if>
+
+
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 product-col col-fullwidth">
+
+
+                                    <div class="product-block item-default clearfix" >
+
+
+
+                                        <div class="images clearfix">
+                                            <a class="img" href="__CONTROLLER__/details/myid/<{$vo.myid}>"  itemprop="url" title="<{$vo.tittle}>" >
+                                                <img class="img-responsive" itemprop="image"
+                                                     src="<{$vo.editorvalue.0}>" title="<{$vo.tittle}>"
+                                                     alt="<{$vo.tittle}>">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="product-meta">
+                                            <div class="product-meta-inner">
+                                                <div class="left">
+                                                    <div class="review clearfix">
+                                                        <h3 class="name" itemprop="name"><a><{$vo.tittle}></a></h3>
+
+
+                                                    </div>
+
+                                                    <div class="price clearfix">
+                                                        <span class="special-price hidden-xs hidden-sm">$<{$vo.ppay}></span>
+                                                        <meta content="100.00" itemprop="price">
+
+                                                        <meta content="" itemprop="priceCurrency">
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                                <if condition="$key % 3 eq 2 ">
+
+                        </div>
+                                </if>
+
+
+
+                            </volist>
+
+
+                            <div class="row products-row">
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                    <div class="paginations paging clearfix">
+                        <div class="results"><nav>
+                            <ul class="pagination">
+                                <li >
+                                    <a href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li><a href="#">1</a></li>
+
+                                <li>
+                                    <a href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<include file="Public/header/footer.html" />

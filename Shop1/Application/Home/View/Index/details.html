@@ -1,0 +1,182 @@
+<include file="Public/header/header.html"/>
+
+
+
+</head>
+<body>
+
+
+
+
+<div id="columns">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li><a href="__MODULE__"><i
+                    class="fa fa-home"></i></a></li>
+
+            <li><a>详情</a></li>
+        </ul>
+        <div class="row">
+
+
+            <aside id="sidebar-left" class="col-md-3">
+                <column id="column-left" class="hidden-xs sidebar">
+
+                    <div class="category box box-highlights theme">
+                        <div class="box-heading"><span>商品分类</span></div>
+                        <div class="box-content tree-menu">
+                            <ul id="366890000accordion" class="box-category box-panel">
+
+                                <volist name="names" id="vo">
+                                    <a href="__CONTROLLER__/yee/cate/<{$vo.id}>">
+                                    <li class="accordion-group clearfix" style="background: white; color: #828282;">
+                                       <{$vo.names}>
+                                    </li>
+                                    </a>
+                                </volist>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </column>
+            </aside>
+
+
+            <section id="sidebar-main" class="col-md-9">
+                <div id="contents" class="wrappers clearfix">
+
+                    <div class="product-info"  >
+                        <div class="row" >
+
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 image-container">
+
+
+
+                                        <img itemprop="image" src="<{$var.photo.0.0}>" title="Fusce in dapibus" alt="Fusce in dapibus" id="image" class="product-image-zoom img-responsive">
+
+
+                            </div>
+
+                            <!--<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 image-container" >-->
+
+                                <!---->
+
+
+
+
+                                <!--&lt;!&ndash;<ul id="etalage">&ndash;&gt;-->
+
+                                    <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<img class="etalage_thumb_image" src="<{$var.photo.0.0}>"/>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<img class="etalage_big_image" src="<{$var.photo.0.0}>"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<img class="etalage_thumb_image" src="<{$var.photo.0.2}>"/>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<img class="etalage_big_image" src="<{$var.photo.0.2}>"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+
+                                    <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<img class="etalage_thumb_image" src="<{$var.photo.0.3}>"/>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<img class="etalage_big_image" src="<{$var.photo.0.3}>"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<img class="etalage_thumb_image" src="<{$var.photo.0.4}>"/>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<img class="etalage_big_image" src="<{$var.photo.0.4}>"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<li>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<img class="etalage_thumb_image" src="<{$var.photo.0.5}>"/>&ndash;&gt;-->
+                                        <!--&lt;!&ndash;<img class="etalage_big_image" src="<{$var.photo.0.5}>"/>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</li>&ndash;&gt;-->
+
+                                <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+
+
+
+                                <!--<script type="text/javascript">-->
+                                    <!--$("#etalage").zoom({-->
+                                        <!--zoom_area_width: 300,-->
+                                        <!--autoplay_interval: 3000,-->
+                                        <!--small_thumbs: 5,-->
+                                        <!--autoplay: true-->
+                                    <!--});-->
+                                <!--</script>-->
+                            <!--</div>-->
+
+                            <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7 product-view">
+                                <h1 class="name"><{$var.tittle}></h1>
+
+                                <div class="rating">
+
+                                    <{$var.details}>
+
+                                </div>
+
+                                <div class="product-extra">
+                                    <ul class="list-unstyled description no-padding">
+                                        <volist name="sss" id="vo">
+                                            <li style="float: left;"><i
+                                                    class="fa fa-chevron-down"></i><b><{$vo.names}></b></li>
+                                        </volist>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <ul class="list-unstyled">
+                                        <li class="other-price price-tax hidden-xs hidden-sm"><p style="text-decoration: line-through;">
+                                            优惠价$<{$var.ppay}>  </p></li>
+                                        <hr/>
+                                        <li class="price-gruop">
+                                            <span class="price-new hidden-xs hidden-sm"> 原价$<{$var.pay}></span>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div id="product">
+                                    <a class="btn btn-danger col-md-5 " href="<{$taobao}>">前往淘宝购买</a>
+                                    <a class="btn btn-danger col-md-4 col-xs-offset-2" href="<{$card}>">银行卡购买</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs-group box">
+                        <ul class="nav nav-tabs clearfix">
+                            <li class="active"><a href="#tab-description"
+                                                  data-toggle="tab">商品详情</a></li>
+                            <li class=""><a href="#tab-review"
+                                            data-toggle="tab">视频</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tab-description">
+
+
+                                <{$var.editorvalue}>
+
+                            </div>
+                                <script>
+                                    $("#tab-description img").addClass("product-image-zoom img-responsive");
+                                </script>
+                            <div class="tab-pane" id="tab-review">
+
+
+                                
+                                <div id="review"><p>视频</p>
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+<include file="Public/header/footer.html"/>

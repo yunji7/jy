@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot@v=4.1.0");
+  src: url("../fonts/fontawesome-webfont.eot@#iefix&v=4.1.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff@v=4.1.0") format("woff"), url("../fonts/fontawesome-webfont.ttf@v=4.1.0") format("truetype"), url("../fonts/fontawesome-webfont.svg@v=4.1.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), local("OpenSans"), url(../../../../../../../../themes.googleusercontent.com/static/fonts/opensans/v8/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../../../../../../../themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v3/DroidKufi-Regular.eot);
+  src: url(../../../../../../../../themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v3/DroidKufi-Regular.eot@#iefix) format("embedded-opentype"), url(../../../../../../../../themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v3/DroidKufi-Regular.woff2) format("woff2"), url(../../../../../../../../themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v3/DroidKufi-Regular.woff) format("woff"), url(../../../../../../../../themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v3/DroidKufi-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Droid Arabic Kufi';
+  font-style: normal;
+  font-weight: 700;
+  src: url(../../../../../../../../themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v3/DroidKufi-Bold.eot);
+  src: url(../../../../../../../../themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v3/DroidKufi-Bold.eot@#iefix) format("embedded-opentype"), url(../../../../../../../../themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v3/DroidKufi-Bold.woff2) format("woff2"), url(../../../../../../../../themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v3/DroidKufi-Bold.woff) format("woff"), url(../../../../../../../../themes.googleusercontent.com/static/fonts/earlyaccess/droidarabickufi/v3/DroidKufi-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: 'Shruti';
+  src: url("../fonts/ShrutiRegular/shruti-webfont.eot");
+  src: url("../fonts/ShrutiRegular/shruti-webfont.eot@#iefix") format("embedded-opentype"), url("../fonts/ShrutiRegular/shruti-webfont.woff") format("woff"), url("../fonts/ShrutiRegular/shruti-webfont.ttf") format("truetype"), url("../fonts/ShrutiRegular/shruti-webfont.svg#shruti") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Shruti';
+  src: url("../fonts/ShrutiBold/shrutib-webfont.eot");
+  src: url("../fonts/ShrutiBold/shrutib-webfont.eot@#iefix") format("embedded-opentype"), url("../fonts/ShrutiBold/shrutib-webfont.woff") format("woff"), url("../fonts/ShrutiBold/shrutib-webfont.ttf") format("truetype"), url("../fonts/ShrutiBold/shrutib-webfont.svg#shrutib") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kelson';
+  src: url("../fonts/KelsonBold/kelson_sans_bold-webfont.eot");
+  src: url("../fonts/KelsonBold/kelson_sans_bold-webfont.eot@#iefix") format("embedded-opentype"), url("../fonts/KelsonBold/kelson_sans_bold-webfont.woff") format("woff"), url("../fonts/KelsonBold/kelson_sans_bold-webfont.ttf") format("truetype"), url("../fonts/KelsonBold/kelson_sans_bold-webfont.svg#kelson_sans_bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kelson';
+  src: url("../fonts/KelsonRegular/kelson_sans_regular-webfont.eot");
+  src: url("../fonts/KelsonRegular/kelson_sans_regular-webfont.eot@#iefix") format("embedded-opentype"), url("../fonts/KelsonRegular/kelson_sans_regular-webfont.woff") format("woff"), url("../fonts/KelsonRegular/kelson_sans_regular-webfont.ttf") format("truetype"), url("../fonts/KelsonRegular/kelson_sans_regular-webfont.svg#kelson_sans_regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Great Vibes"), local("GreatVibes-Regular"), url(../../../../../../../../fonts.gstatic.com/s/greatvibes/v4/6q1c0ofG6NKsEhAc2eh-3YbN6UDyHWBl620a-IRfuBk.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url(../../../../../../../../fonts.gstatic.com/s/roboto/v14/vzIUHo9z-oJ4WgkpPOtg1_esZW2xOQ-xsNqO47m55DA.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local("Roboto Black"), local("Roboto-Black"), url(../../../../../../../../fonts.gstatic.com/s/roboto/v13/mnpfi9pxYH-Go5UiibESIj8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Roboto Light"), local("Roboto-Light"), url(../../../../../../../../fonts.gstatic.com/s/roboto/v14/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Hind Light"), local("Hind-Light"), url(../../../../../../../../fonts.gstatic.com/s/hind/v5/R5nyNcvoz7n0iBHxjY_LyQ.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Hind Regular"), local("Hind-Regular"), url(../../../../../../../../fonts.gstatic.com/s/hind/v5/mjitrc9VnL7D7tS-i3g3XQ.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 500;
+  src: local("Hind Medium"), local("Hind-Medium"), url(../../../../../../../../fonts.gstatic.com/s/hind/v5/yATwQM0pIZXIFPrEDZyOHg.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Hind Bold"), local("Hind-Bold"), url(../../../../../../../../fonts.gstatic.com/s/hind/v5/lyIZFqDTaXXyAxN6-svvJg.woff) format("woff");
+}

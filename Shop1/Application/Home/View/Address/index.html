@@ -1,0 +1,345 @@
+<include file="Public/header/header.html"/>
+
+</head>
+<body>
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li><a href="#"><i
+                class="fa fa-home"></i></a></li>
+        <li><a href="__CONTROLLER__/">公司简介</a>
+        </li>
+    </ul>
+    <div class="row">
+        <section id="sidebar-main" class="col-md-12">
+            <div id="content" class="wrapper clearfix">
+                <div id="services">
+                    <div class="container">
+
+
+                        <div class="row">
+                            <div class="col-lg-5 col-sm-5 address">
+                                <h2><p style="text-align: center">聚盈珠宝</p></h2>
+                                <p>　　聚盈珠宝2009年成立，全国总部设立在四大玉器市场之首平洲玉器街,
+                                主要经营: 翡翠、钻石、红宝石、碧石、镶金。
+                                    拥有自主独立的产品研发队伍、规模庞大的贵金属首饰生产工厂和钻石镶嵌加工厂
+                                    ,镶金、开原石、倒模一条线生产。
+                                </p>
+
+                            </div>
+
+
+                                 <img class="col-lg-6 col-sm-6 col-xs-12 address" src="__PUBLIC__/about.jpg"/>
+
+                        </div>
+
+                        <br/><br/><br/>
+
+                        <div class="row">
+
+                            <div class="col-lg-5 col-sm-5 address">
+        <br/><br/><br/><br/>
+                                <h4>全国总部</h4>
+
+                                <p>
+
+                                    地址：广东省佛山市南海区桂城街道平洲玉器街西街211号
+
+                                </p>
+
+
+
+                                <h4>分店</h4>
+
+                                <p>
+
+                                    地址：广州大和路田料古道44号
+
+                                </p>
+
+
+                                <p>
+
+                                    联系人：
+
+                                    <span class="muted">陈小姐</span>
+
+                                    <br>
+
+
+                                    联系电话：
+
+                                    <span class="muted">13822164734
+                                       <br> 座机 0757-86701981</span><br>
+
+
+
+
+                                </p>
+
+
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-6 col-sm-6 addres"  >
+
+                                <h2><p style="text-align: center;">全国总部</p></h2>
+
+
+                                    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3U9qS5BOHXGX2tcGBaUyUY8k"></script>
+
+
+                                <!--百度地图容器-->
+                                <div style="width:100%;height:400px;border:#ccc solid 1px;font-size:12px" id="maps">
+
+
+                                </div>
+
+                                <script type="text/javascript">
+                                    //创建和初始化地图函数：
+                                    function initMap(){
+                                        createMap();//创建地图
+                                        setMapEvent();//设置地图事件
+                                        addMapControl();//向地图添加控件
+                                        addMapOverlay();//向地图添加覆盖物
+                                    }
+                                    function createMap(){
+                                        map = new BMap.Map("maps");
+                                        map.centerAndZoom(new BMap.Point(113.215424,23.025558),19);
+                                    }
+                                    function setMapEvent(){
+                                        map.enableScrollWheelZoom();
+                                        map.enableKeyboard();
+                                        map.enableDragging();
+                                        map.enableDoubleClickZoom()
+                                    }
+                                    function addClickHandler(target,window){
+                                        target.addEventListener("click",function(){
+                                            target.openInfoWindow(window);
+                                        });
+                                    }
+                                    function addMapOverlay(){
+                                        var markers = [
+                                            {content:"            ",title:"聚盈珠宝",imageOffset: {width:0,height:3},position:{lat:23.025998,lng:113.215325}}
+                                        ];
+                                        for(var index = 0; index < markers.length; index++ ){
+                                            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+                                            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                                                imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+                                            })});
+                                            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+                                            var opts = {
+                                                width: 200,
+                                                title: markers[index].title,
+                                                enableMessage: false
+                                            };
+                                            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+                                            marker.setLabel(label);
+                                            addClickHandler(marker,infoWindow);
+                                            map.addOverlay(marker);
+                                        };
+                                    }
+                                    //向地图添加控件
+                                    function addMapControl(){
+                                        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                                        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+                                        map.addControl(scaleControl);
+                                        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                                        map.addControl(navControl);
+                                        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+                                        map.addControl(overviewControl);
+                                    }
+                                    var map;
+                                    initMap();
+                                </script>
+
+                            </div>
+
+                        </div>
+
+
+                        <br/>
+                        <div class="row">
+
+                            <div class="col-lg-5 col-sm-5 address">
+                                <br/><br/><br/><br/>
+                                <h4>深圳分店</h4>
+
+                                <p>
+
+                                    地址: 深圳水贝博大珠宝
+
+                                </p>
+
+                                <br>
+
+                                <br>
+
+                                <br>
+
+                                <p>
+
+                                    联系人：
+
+                                    <span class="muted">黄生</span>
+
+                                    <br>
+
+                                    <br>
+
+                                    联系电话：
+
+                                    <span class="muted">13660668999
+                                     <br> 联系电话：  18620197778</span><br>
+
+
+
+
+                                </p>
+
+                            </div>
+
+                            <div class="col-lg-6 col-sm-6 addres">
+
+                                <h2><p style="text-align: center"></p>深圳分店</h2>
+
+
+                                <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3U9qS5BOHXGX2tcGBaUyUY8k"></script>
+
+
+                                <!--百度地图容器-->
+                                <div style="width:100%;height:400px;border:#ccc solid 1px;font-size:12px" id="map">
+
+
+                                </div>
+
+                                <script type="text/javascript">
+                                    //创建和初始化地图函数：
+                                    function initMap(){
+                                        createMap();//创建地图
+                                        setMapEvent();//设置地图事件
+                                        addMapControl();//向地图添加控件
+                                        addMapOverlay();//向地图添加覆盖物
+                                    }
+                                    function createMap(){
+                                        map = new BMap.Map("map");
+                                        map.centerAndZoom(new BMap.Point(114.133307,22.57666),18);
+                                    }
+                                    function setMapEvent(){
+                                        map.enableScrollWheelZoom();
+                                        map.enableKeyboard();
+                                        map.enableDragging();
+                                        map.enableDoubleClickZoom()
+                                    }
+                                    function addClickHandler(target,window){
+                                        target.addEventListener("click",function(){
+                                            target.openInfoWindow(window);
+                                        });
+                                    }
+                                    function addMapOverlay(){
+                                        var markers = [
+                                            {content:"",title:"分店",imageOffset: {width:0,height:3},position:{lat:22.576935,lng:114.133559}}
+                                        ];
+                                        for(var index = 0; index < markers.length; index++ ){
+                                            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+                                            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                                                imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+                                            })});
+                                            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+                                            var opts = {
+                                                width: 200,
+                                                title: markers[index].title,
+                                                enableMessage: false
+                                            };
+                                            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+                                            marker.setLabel(label);
+                                            addClickHandler(marker,infoWindow);
+                                            map.addOverlay(marker);
+                                        };
+                                    }
+                                    //向地图添加控件
+                                    function addMapControl(){
+                                        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                                        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+                                        map.addControl(scaleControl);
+                                        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                                        map.addControl(navControl);
+                                        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+                                        map.addControl(overviewControl);
+                                    }
+                                    var map;
+                                    initMap();
+                                </script>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<style>
+    DIV.jogger {
+        PADDING-RIGHT: 2px;
+        PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px;
+        MARGIN: 7px;
+        PADDING-TOP: 2px;
+        FONT-FAMILY: "Lucida Sans Unicode",
+        "Lucida Grande", LucidaGrande, "Lucida Sans", Geneva, Verdana, sans-serif
+    }
+
+    DIV.jogger A {
+        PADDING-RIGHT: 0.64em;
+        PADDING-LEFT: 0.64em;
+        PADDING-BOTTOM: 0.43em;
+        MARGIN: 2px;
+        COLOR: #fff;
+        PADDING-TOP: 0.5em;
+        BACKGROUND-COLOR: #ee4e4e;
+        TEXT-DECORATION: none
+    }
+
+    DIV.jogger A:hover {
+        PADDING-RIGHT: 0.64em;
+        PADDING-LEFT: 0.64em;
+        PADDING-BOTTOM: 0.43em;
+        MARGIN: 2px;
+        COLOR: #fff;
+        PADDING-TOP: 0.5em;
+        BACKGROUND-COLOR: #de1818
+    }
+
+    DIV.jogger A:active {
+        PADDING-RIGHT: 0.64em;
+        PADDING-LEFT: 0.64em;
+        PADDING-BOTTOM: 0.43em;
+        MARGIN: 2px;
+        COLOR: #fff;
+        PADDING-TOP: 0.5em;
+        BACKGROUND-COLOR: #de1818
+    }
+
+    DIV.jogger SPAN.current {
+        PADDING-RIGHT: 0.64em;
+        PADDING-LEFT: 0.64em;
+        PADDING-BOTTOM: 0.43em;
+        MARGIN: 2px;
+        COLOR: #6d643c;
+        PADDING-TOP: 0.5em;
+        BACKGROUND-COLOR: #f6efcc
+    }
+
+    DIV.jogger SPAN.disabled {
+        DISPLAY: none
+    }
+</style>
+
+
+<include file="Public/header/footer.html"/>

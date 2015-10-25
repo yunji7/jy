@@ -1,0 +1,324 @@
+[ 2015-10-22T18:03:53+08:00 ] 127.0.0.1 /Shop1/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user D:\File\Shop1\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_commodity` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,2,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,5,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,6,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,7,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,9,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,10,%' LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T18:03:55+08:00 ] 127.0.0.1 /Shop1/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user D:\File\Shop1\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_commodity` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,2,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,5,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,6,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,7,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,9,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,10,%' LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-10-22T18:03:57+08:00 ] 127.0.0.1 /Shop1/index.php/Home/Index/details/myid/YQ292362
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_commodity` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `x_commodity` WHERE `myid` = 'YQ292362' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_category` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_category` WHERE ( id=5 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_category` WHERE ( id=14 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_category` WHERE ( id=18 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_category` WHERE ( id=19 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_category` WHERE `id` = 2  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: id D:\File\Shop1\Application\Runtime\Cache\Home\37214a01e04274e0039680059f673b9e.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2015-10-22T18:04:00+08:00 ] 127.0.0.1 /Shop1/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: user D:\File\Shop1\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_commodity` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,2,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,5,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,6,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,7,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,9,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,10,%' LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-10-22T18:04:23+08:00 ] 127.0.0.1 /Shop1/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user D:\File\Shop1\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_commodity` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,2,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,5,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,6,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,7,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,9,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,10,%' LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T18:05:22+08:00 ] 127.0.0.1 /Shop1/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user D:\File\Shop1\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_commodity` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,2,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,5,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,6,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,7,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,9,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,10,%' LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T18:05:24+08:00 ] 127.0.0.1 /Shop1/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user D:\File\Shop1\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_commodity` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,2,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,5,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,6,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,7,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,9,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,10,%' LIMIT 3   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T18:05:26+08:00 ] 127.0.0.1 /Shop1/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user D:\File\Shop1\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_commodity` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,2,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,5,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,6,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,7,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,9,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,10,%' LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-10-22T18:05:27+08:00 ] 127.0.0.1 /Shop1/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user D:\File\Shop1\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `x_commodity` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,2,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,5,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,6,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,7,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,9,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,10,%' LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-10-22T18:05:35+08:00 ] 127.0.0.1 /Shop1/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user D:\File\Shop1\Application\Home\Controller\IndexController.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `x_commodity` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,2,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,5,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,6,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,7,%' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,9,%' LIMIT 3   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `x_commodity` WHERE `cate` LIKE '%,10,%' LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-10-22T19:16:27+08:00 ] 127.0.0.1 /Shop1/index.php/Home/address/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `x_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `x_category` WHERE ( PID = 1 )  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: id D:\File\Shop1\Application\Runtime\Cache\Home\929ce7e01bdc2735067bc2761c003306.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

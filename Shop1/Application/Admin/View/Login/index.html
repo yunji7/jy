@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="__LINK__/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__LINK__/css/bootstrap-reset.css" rel="stylesheet">
+    <!--external css-->
+    <!--<link href="__LINK__/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>-->
+    <!-- Custom styles for this template -->
+    <link href="__LINK__/css/style.css" rel="stylesheet">
+    <link href="__LINK__/css/style-responsive.css" rel="stylesheet"/>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+    <!--[if lt IE 9]>
+    <script src="__LINK__/js/html5shiv.js"></script>
+    <script src="__LINK__/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="login-body">
+
+<div class="container">
+
+    <form class="form-signin">
+
+        <h2 class="form-signin-heading">用户登录</h2>
+
+        <div class="login-wrap">
+            <input type="text" class="form-control" id="_id" name="id" placeholder="账号" autofocus>
+            <input type="password" class="form-control"   id="_password" name="password" placeholder="密码">
+            <label class="checkbox">
+                <input type="checkbox" value="remember-me"> 十天内免登录
+
+
+            </label>
+            <input type="text" class="form-control" id="_verify" name="verify"  placeholder="验证码">
+            <img id="imgverify" src="__CONTROLLER__/verify"    class="img-responsive center-block" alt="Responsive image">
+            <!--<img src="__CONTROLLER__/verify">-->
+
+            <h6> </h6>
+            <button id="_submit" class="btn btn-lg btn-login btn-block" type="button">登录</button>
+
+        </div>
+    </form>
+
+
+    <!-- Modal -->
+    <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">您好!</h4>
+                </div>
+                <div  class="modal-body text-center">
+                    <h3 id="_message">验证码错误</h3>
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+
+
+    <div hidden="hidden"><a id="_hint" data-toggle="modal" href="#myModal"> 提示框</a></div>
+
+</div>
+
+
+<!-- js placed at the end of the document so the pages load faster -->
+<script src="__LINK__/js/jquery.js"></script>
+<script src="__LINK__/js/bootstrap.min.js"></script>
+
+<script>
+
+    /**
+     * 验证码重新刷新
+     */
+    $("#imgverify").click(function()
+    {
+        $(this).attr({ src: '__CONTROLLER__/verify?'+Math.random() });
+    });
+
+
+
+
+    /**
+     * ajax  请求登录
+     */
+    $("#_submit").bind("click", function () {
+        $.ajax({
+            type: "POST",
+            url: "__CONTROLLER__/login",
+            data: {
+
+                id: $("#_id").val(),
+                password: $("#_password").val(),
+                verify: $("#_verify").val()
+
+            },
+            success: function (msg) {
+
+
+                /**
+                 * 登录成功
+                 */
+
+
+
+                /**
+                 * 如果验证码错误
+                 */
+               if(msg == 'no')
+               {
+                   //重新获取验证码
+                   $("#imgverify").click();
+                   $("#_message").html("验证码错误,请重新输入");
+                   $("#_hint").click();
+
+                   /**
+                    * 验证码重新设置为零
+                    */
+                   $("#_verify").val("");
+
+                   /**
+                    *  如果验证码成功判断账号密码是否成功
+                    */
+               }else if(msg == 'pass'){
+
+                   $("#_message").html("账号或密码错误,请重新输入");
+                   $("#_hint").click();
+
+                   //重新获取验证码
+                   $("#imgverify").click();
+                   $("form > input").val("");
+               }else{
+                   //登录成功
+
+                   location.href = "__MODULE__/CContent";
+
+               }
+            }
+        });
+    })
+
+</script>
+
+</body>
+</html>
